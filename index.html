@@ -3,52 +3,47 @@
   <head>
     <title>Edison Henrique</title>
     <style>
-    body {
-      font-size: 28px;
-    }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 0;
-    }
+      li {
+        float: left;
+        border-right:1px solid #bbb;
+      }
 
-    li {
-      float: left;
-    }
+      li:last-child {
+        border-right: none;
+      }
 
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-    li a:hover {
-      background-color: #111;
-    }
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
 
-    .active {
-      background-color: #4CAF50;
-    }
+      .active {
+        background-color: #4CAF50;
+      }
     </style>
   </head>
   <body>
-    <div class="header">
-      <h2>Scroll Down</h2>
-      <p>Scroll down to see the sticky effect.</p>
-    </div>
-
     <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a class="active" href="index.hmtl">Inicio</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="termos.html">Termos</a></li>
+      <li style="float:right"><a href="login.html">Login</a></li>
+      <li style="float:right"><a href="registrar.html">Registrar</a></li>
     </ul>
   </body>
 </html>
